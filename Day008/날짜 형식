@@ -27,8 +27,9 @@ namespace FormatApp01
             Console.WriteLine(dt.ToString("yyyy-MM-dd HH:mm:ss (ddd)"), ciEn);
             Console.WriteLine(dt.ToString(ciEn));
 
-
-
+            //수정
+            DateTime Dt = DateTime.Now;
+            Console.WriteLine($"{Dt:yyyy-MM-dd}");
         }
     }
 }
