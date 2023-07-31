@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Test001
+{
+    internal class Program
+    {
+        public static int pivot(int x)
+        {
+            if (x == 1) return 1;
+            if (x == 2) return 1;
+
+            return pivot(x - 1) + pivot(x - 2);
+        }
+        static void Main(string[] args)
+        {
+            int n = Int32.Parse(Console.ReadLine());
+            Console.WriteLine(pivot(n));
+        }
+    }
+}
